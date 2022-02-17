@@ -2,12 +2,12 @@ import requests
 import json
 
 # APIキーの指定
-apikey = "54670f7a3c6963173605772bf6c620d7"
+apikey ={apikey}
 
 # 天気を調べたい都市の一覧 
 cities = ["Tokyo,JP", "London,UK", "New York,US"]
 # APIのひな型
-api = {{apikey}}
+api = "http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={key}"
 
 # 温度変換(ケルビン→摂氏)
 k2c = lambda k: k - 273.15
